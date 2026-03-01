@@ -6,6 +6,14 @@
 // Those variables are scoped to the theme's own compilation context and
 // are NOT available in this file, causing "Undefined variable" build errors.
 // All visual polish that needs those values lives in head_custom.html instead.
+//
+// AZ-104 warm brown palette summary (for reference — values live in head_custom.html):
+//   Primary accent  : #9C6B3F  (walnut brown)
+//   Light accent    : #D4A574  (caramel / tan)
+//   Caveat border   : #C8956C  (terracotta)
+//   Warning border  : #C97B5A  (burnt sienna)
+//   h3 heading      : #C8A882  (warm sand)
+//   Domain badge    : #7B4F2E  (dark walnut)
 
 // ── Smooth scroll ─────────────────────────────────────────
 html {
@@ -13,10 +21,11 @@ html {
 }
 
 // ── Horizontal rule ───────────────────────────────────────
+// Warm sand tint instead of cold white
 hr {
-  margin: 1.75rem 0;
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin:     1.75rem 0;
+  border:     0;
+  border-top: 1px solid rgba(212, 165, 116, 0.15);
 }
 
 // ── Bold text ─────────────────────────────────────────────
@@ -27,7 +36,7 @@ hr {
 // ── Blockquotes (exam caveats) ────────────────────────────
 .main-content blockquote {
   font-style: normal;
-  margin: 1rem 0;
+  margin:     1rem 0;
 }
 
 // ── Mermaid container ─────────────────────────────────────
@@ -38,7 +47,7 @@ pre.mermaid,
 
 // ── Inline code in tables ─────────────────────────────────
 table code {
-  font-size: 0.8em;
-  padding: 0.1em 0.35em;
+  font-size:     0.8em;
+  padding:       0.1em 0.35em;
   border-radius: 3px;
 }

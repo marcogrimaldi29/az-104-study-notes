@@ -21,6 +21,22 @@
 
 <!-- ── Study-optimised custom styles ────────────────────── -->
 <style>
+  /*
+   * AZ-104 colour palette — warm brown / earthy tones
+   *
+   * Primary accent  : #9C6B3F  (walnut brown)
+   * Light accent    : #D4A574  (caramel / tan)
+   * Caveat border   : #C8956C  (terracotta)
+   * Caveat bg       : rgba(200, 149, 108, 0.08)
+   * Warning border  : #C97B5A  (burnt sienna)
+   * Warning bg      : rgba(201, 123, 90, 0.08)
+   * Table hover     : rgba(156, 107, 63, 0.10)
+   * SLA highlight   : #D4A574  (caramel)
+   * h3 heading      : #C8A882  (warm sand)
+   * Mermaid border  : rgba(212, 165, 116, 0.20)
+   * Domain badge bg : #7B4F2E  (dark walnut)
+   */
+
   /* ── Exam Caveat callout ─────────────────────────────── */
   blockquote strong:first-child,
   blockquote p:first-child strong:first-child {
@@ -29,37 +45,37 @@
 
   /* Coloured left-border callout shorthand via blockquote */
   .warning-box {
-    border-left: 4px solid #f28b82;
-    background:  rgba(242, 139, 130, 0.08);
-    padding:     0.6rem 1rem;
-    margin:      1rem 0;
+    border-left:   4px solid #C97B5A;
+    background:    rgba(201, 123, 90, 0.08);
+    padding:       0.6rem 1rem;
+    margin:        1rem 0;
     border-radius: 0 6px 6px 0;
   }
 
   /* ── Tables ─────────────────────────────────────────── */
   /* Make all tables scroll horizontally on small screens  */
   .main-content table {
-    display:   block;
-    width:     100%;
+    display:    block;
+    width:      100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     border-collapse: collapse;
-    font-size: 0.875rem;
+    font-size:  0.875rem;
   }
 
   .main-content table th {
-    background: var(--sidebar-color);
-    position:   sticky;
-    top:        0;
-    font-weight: 700;
+    background:     var(--sidebar-color);
+    position:       sticky;
+    top:            0;
+    font-weight:    700;
     letter-spacing: 0.03em;
-    padding: 0.55rem 0.8rem;
-    white-space: nowrap;
+    padding:        0.55rem 0.8rem;
+    white-space:    nowrap;
   }
 
   .main-content table td {
-    padding:    0.45rem 0.8rem;
-    min-width:  80px;
+    padding:     0.45rem 0.8rem;
+    min-width:   80px;
     line-height: 1.4;
   }
 
@@ -69,21 +85,23 @@
   }
 
   .main-content table tbody tr:hover {
-    background: rgba(26, 115, 232, 0.08);
+    background: rgba(156, 107, 63, 0.10);   /* warm brown tint */
   }
 
   /* ── Mermaid diagrams ────────────────────────────────── */
   .main-content .mermaid {
     margin:        1.5rem auto;
     padding:       1rem;
-    background:    rgba(30, 30, 30, 0.5);
-    border:        1px solid rgba(255,255,255,0.08);
+    background:    rgba(35, 25, 15, 0.50);  /* very dark warm brown */
+    border:        1px solid rgba(212, 165, 116, 0.20);
     border-radius: 8px;
     overflow-x:    auto;
     text-align:    center;
-  }  /* Ensure diagram text (e.g. pie labels/title) is white for dark background */
+  }
+
+  /* Ensure diagram text is readable on the dark background */
   .main-content .mermaid svg text {
-    fill: #fff !important;
+    fill: #f0e6d8 !important;              /* warm off-white */
   }
 
   /* ── Code blocks ─────────────────────────────────────── */
@@ -93,15 +111,15 @@
   }
 
   .main-content code {
-    font-size: 0.84em;
-    padding:   0.15em 0.4em;
+    font-size:     0.84em;
+    padding:       0.15em 0.4em;
     border-radius: 4px;
   }
 
-  /* ── SLA badges ─────────────────────────────────────── */
-  /* Bold SLA percentages stand out in tables */
+  /* ── SLA / emphasis in tables ───────────────────────── */
+  /* Bold values stand out in warm caramel instead of blue */
   .main-content table td strong {
-    color: #8ab4f8;
+    color: #D4A574;                        /* caramel */
   }
 
   /* ── Domain weight badges in nav ─────────────────────── */
@@ -112,29 +130,28 @@
 
   /* ── Headings spacing ───────────────────────────────── */
   .main-content h2 {
-    margin-top:    2rem;
-    padding-top:   0.5rem;
-    border-top:    1px solid rgba(255,255,255,0.07);
+    margin-top:  2rem;
+    padding-top: 0.5rem;
+    border-top:  1px solid rgba(212, 165, 116, 0.15);  /* warm sand rule */
   }
 
   .main-content h3 {
     margin-top: 1.5rem;
-    color:      #8ab4f8;
+    color:      #C8A882;                   /* warm sand */
   }
 
   /* ── Scenario quick-reference tables ────────────────── */
-  /* Give the last col (answer) a slightly different weight */
   .main-content table td:last-child {
     font-weight: 500;
   }
 
   /* ── Exam-caveats blockquote styling ─────────────────── */
   .main-content blockquote {
-    border-left:  4px solid #f4b400;
-    background:   rgba(244, 180, 0, 0.06);
-    padding:      0.6rem 1rem;
+    border-left:   4px solid #C8956C;      /* terracotta */
+    background:    rgba(200, 149, 108, 0.08);
+    padding:       0.6rem 1rem;
     border-radius: 0 6px 6px 0;
-    font-size:    0.92rem;
+    font-size:     0.92rem;
   }
 
   .main-content blockquote p {
@@ -144,8 +161,8 @@
   /* ── Page breadcrumb / domain weight tag ─────────────── */
   .domain-badge {
     display:        inline-block;
-    background:     #1a73e8;
-    color:          #fff;
+    background:     #7B4F2E;              /* dark walnut */
+    color:          #F0E6D8;             /* warm off-white text */
     font-size:      0.75rem;
     font-weight:    700;
     padding:        0.2rem 0.6rem;
@@ -172,7 +189,7 @@
     }
     .main-content table td,
     .main-content table th {
-      padding: 0.35rem 0.5rem;
+      padding:   0.35rem 0.5rem;
       min-width: 60px;
     }
   }
