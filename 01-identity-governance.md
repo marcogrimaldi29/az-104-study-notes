@@ -3,7 +3,7 @@ layout: default
 title: 01 — Identity & Governance
 nav_order: 3
 description: "Design identity and governance and solutions."
-permalink: /01-identity-governance-monitoring/
+permalink: /01-identity-governance/
 mermaid: true
 ---
 
@@ -15,6 +15,8 @@ mermaid: true
 
 Covers Microsoft Entra ID, users, groups, RBAC, Azure Policy, resource locks, tags, subscriptions, and cost management.
 {: .fs-5 .fw-300 }
+
+> 📁 [← Back to Home](/az-104-study-notes/)
 
 ---
 
@@ -454,4 +456,4 @@ az consumption budget create \
 
 ---
 
-[← Prerequisites](./00-azure-prerequisites/){: .btn } [Domain 2 — Storage →](./02-storage/){: .btn .btn-primary }
+[← Prerequisites](/az-104-study-notes/00-azure-prerequisites/){: .btn } [Domain 2 — Storage →](/az-104-study-notes/02-storage/){: .btn .btn-primary }

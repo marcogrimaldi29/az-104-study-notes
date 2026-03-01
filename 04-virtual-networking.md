@@ -16,6 +16,8 @@ mermaid: true
 Covers VNets, subnets, peering, NSGs, ASGs, route tables, Azure Bastion, DNS, service endpoints, private endpoints, and load balancing.
 {: .fs-5 .fw-300 }
 
+> 📁 [← Back to Home](/az-104-study-notes/)
+
 ---
 
 ## Table of Contents
@@ -567,4 +569,4 @@ az network lb address-pool show \
 
 ---
 
-[← Domain 3 — Compute](./03-compute/){: .btn } [Domain 5 — Monitor & Maintain →](./05-monitor-maintain/){: .btn .btn-primary }
+[← Domain 3 — Compute](/az-104-study-notes/03-compute/){: .btn } [Domain 5 — Monitor & Maintain →](/az-104-study-notes/05-monitor-maintain/){: .btn .btn-primary }

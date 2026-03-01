@@ -16,6 +16,8 @@ mermaid: true
 Covers storage accounts, redundancy, SAS tokens, access policies, encryption, Azure Files, Blob storage, lifecycle management, and data tools.
 {: .fs-5 .fw-300 }
 
+> 📁 [← Back to Home](/az-104-study-notes/)
+
 ---
 
 ## Table of Contents
@@ -442,4 +444,4 @@ Automates **tier transitions** and **deletions** based on rules:
 
 ---
 
-[← Domain 1 — Identity](./01-identity-governance/){: .btn } [Domain 3 — Compute →](./03-compute/){: .btn .btn-primary }
+[← Domain 1 — Identity](/az-104-study-notes/01-identity-governance/){: .btn } [Domain 3 — Compute →](/az-104-study-notes/03-compute/){: .btn .btn-primary }
