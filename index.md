@@ -41,11 +41,11 @@ mermaid: true
 
 ```mermaid
 pie title AZ-104 — Official Exam Domain Weights
-    "Manage Azure Identities & Governance (20–25%)" : 22
-    "Implement and Manage Storage (15–20%)" : 17
-    "Deploy and Manage Compute Resources (20–25%)" : 22
-    "Implement and Manage Virtual Networking (15–20%)" : 17
-    "Monitor and Maintain Azure Resources (10–15%)" : 12
+    "Manage Azure Identities & Governance (20–25%)" : 25
+    "Implement and Manage Storage (15–20%)" : 20
+    "Deploy and Manage Compute Resources (20–25%)" : 20
+    "Implement and Manage Virtual Networking (15–20%)" : 20
+    "Monitor and Maintain Azure Resources (10–15%)" : 15
 ```
 
 | # | Domain | Weight | Key Focus Areas |
