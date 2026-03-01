@@ -16,6 +16,8 @@ mermaid: true
 Covers ARM templates and Bicep, virtual machines and disks, availability sets and zones, VM Scale Sets, containers, and Azure App Service.
 {: .fs-5 .fw-300 }
 
+> 📁 [← Back to Home](/az-104-study-notes/)
+
 ---
 
 ## Table of Contents
@@ -533,4 +535,4 @@ az webapp deployment slot swap \
 
 ---
 
-[← Domain 2 — Storage](./02-storage/){: .btn } [Domain 4 — Networking →](./04-virtual-networking/){: .btn .btn-primary }
+[← Domain 2 — Storage](/az-104-study-notes/02-storage/){: .btn } [Domain 4 — Networking →](/az-104-study-notes/04-virtual-networking/){: .btn .btn-primary }

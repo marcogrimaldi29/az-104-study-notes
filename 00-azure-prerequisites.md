@@ -14,6 +14,8 @@ mermaid: true
 Core concepts you must know before tackling any exam domain.
 {: .fs-5 .fw-300 }
 
+> 📁 [← Back to Home](/az-104-study-notes/)
+
 ---
 
 ## Table of Contents
@@ -320,4 +322,4 @@ Before starting domain study, confirm you can answer:
 
 ---
 
-[← Back to Index](./){: .btn } [Domain 1 — Identity & Governance →](./01-identity-governance/){: .btn .btn-primary }
+[← Back to Home](/az-104-study-notes/){: .btn } [Domain 1 — Identity & Governance →](/az-104-study-notes/01-identity-governance/){: .btn .btn-primary }

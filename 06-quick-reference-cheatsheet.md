@@ -13,6 +13,8 @@ mermaid: true
 Last-minute review: key numbers, SLA tables, decision trees, CLI/PowerShell commands, SKU comparisons, and exam traps by domain.
 {: .fs-5 .fw-300 }
 
+> 📁 [← Back to Home](/az-104-study-notes/)
+
 ---
 
 ## Table of Contents
@@ -361,4 +363,4 @@ az backup job list --resource-group MyRG --vault-name MyVault -o table
 
 **Good luck on the exam! 🎯**
 
-[← Monitor & Maintain](./05-monitor-maintain/){: .btn } [Back to Index](./){: .btn .btn-primary }
+[← Monitor & Maintain](/az-104-study-notes/05-monitor-maintain/){: .btn } [Back to Home](/az-104-study-notes/){: .btn .btn-primary }

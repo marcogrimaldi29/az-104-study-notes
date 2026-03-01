@@ -16,6 +16,8 @@ mermaid: true
 Covers Azure Monitor, Log Analytics, alerts, action groups, VM Insights, Network Watcher, Azure Backup, Recovery Services vaults, and Azure Site Recovery.
 {: .fs-5 .fw-300 }
 
+> 📁 [← Back to Home](/az-104-study-notes/)
+
 ---
 
 ## Table of Contents
@@ -482,4 +484,4 @@ az monitor metrics alert create \
 
 ---
 
-[← Domain 4 — Networking](./04-virtual-networking/){: .btn } [Quick Reference Cheatsheet →](./06-quick-reference-cheatsheet/){: .btn .btn-primary }
+[← Domain 4 — Networking](/az-104-study-notes/04-virtual-networking/){: .btn } [Quick Reference Cheatsheet →](/az-104-study-notes/06-quick-reference-cheatsheet/){: .btn .btn-primary }
