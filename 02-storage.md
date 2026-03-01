@@ -68,7 +68,7 @@ az storage account network-rule add \
 
 **Trusted Microsoft services bypass:** Some Azure services (e.g. Azure Backup, Azure Monitor) can be allowed even with a restrictive firewall by enabling "Allow trusted Microsoft services".
 
-> ⚠️ **Exam Caveat:** Setting `--default-action Deny` blocks **all** traffic including from the Azure portal unless you add your IP or enable "Allow Azure services". Many candidates lock themselves out of their own storage account.
+> ⚠️ **Exam Caveat:** Setting `--default-action Deny` blocks **all** traffic including from the Azure portal unless you add your IP or enable "Allow Azure services".
 
 ### Shared Access Signature (SAS) Tokens
 
@@ -81,6 +81,9 @@ SAS tokens delegate access to storage **without sharing account keys**.
 | **Account SAS** | Account key | One or more storage services |
 | **Service SAS** | Account key | Specific resource (blob, container, file share, queue, table) |
 | **User Delegation SAS** | Entra ID credential | Blob and Data Lake Storage Gen2 only |
+
+> ⚠️ **Exam Caveat:** A service SAS token or an account SAS token is authorized with Shared Key and will not be permitted on a request to Blob storage when the `AllowSharedKeyAccess` property is set to false.
+> A user delegation SAS is authorized with Microsoft Entra ID and will be permitted on a request to Blob storage when the `AllowSharedKeyAccess` property is set to false.
 
 **SAS token components:**
 
@@ -240,7 +243,7 @@ az storage account blob-service-properties update \
 | **Infrastructure encryption** | Optional | Double encryption at infrastructure layer |
 | **Encryption in transit** | Configurable | Enforce HTTPS with `--https-only true` |
 
-> ⚠️ **Exam Caveat:** Encryption at rest is **always on** — you cannot disable it. The exam may try to trick you into choosing "enable encryption" as an action.
+> ⚠️ **Exam Caveat:** Encryption at rest is **always on** — you cannot disable it. The exam may try to trick you into choosing "Enable encryption" as an action.
 
 ### Azure Storage Explorer and AzCopy
 
@@ -323,7 +326,7 @@ Blob storage stores **unstructured object data** in containers.
 |------|-------------|---------|
 | **Block blob** | Data split into blocks; optimised for upload | Files, images, videos, backups |
 | **Append blob** | Blocks appended only (no update/delete) | Log files |
-| **Page blob** | Random-write optimised; 512-byte pages | VM unmanaged disks |
+| **Page blob** | Random-write optimised; 512-byte pages | VM unmanaged disks (legacy) |
 
 ```bash
 # Create a container
@@ -351,7 +354,7 @@ az storage blob upload \
 
 ### Storage Tiers
 
-| Tier | Access Cost | Storage Cost | Min Duration | Use Case |
+| Tier | Access / Transaction Cost | Storage Cost | Min Duration | Use Case |
 |------|------------|-------------|--------------|---------|
 | **Hot** | Low | High | None | Frequently accessed data |
 | **Cool** | Medium | Medium | 30 days | Infrequent, at-least monthly access |
@@ -360,7 +363,7 @@ az storage blob upload \
 
 **Rehydration from Archive:** Move to Hot or Cool tier first — takes 1–15 hours standard, or up to 1 hour with Priority rehydration.
 
-> ⚠️ **Exam Caveat:** Archive tier blobs **cannot be read directly**. You must first rehydrate them to Hot or Cool. Early deletion from Cool (<30d), Cold (<90d), or Archive (<180d) incurs early deletion charges.
+> ⚠️ **Exam Caveat:** Archive tier blobs **cannot be read directly**. You must first rehydrate archived blobs to Hot or Cool. Treat them as offline files. Early deletion from Cool (<30d), Cold (<90d), or Archive (<180d) incurs early deletion charges.
 
 ### Soft Delete for Blobs and Containers
 
@@ -431,12 +434,12 @@ Automates **tier transitions** and **deletions** based on rules:
 
 | Scenario | Solution |
 |----------|---------|
-| Grant time-limited read access to a blob without sharing account key | Generate a **Service SAS** or **User Delegation SAS** |
-| Revoke SAS tokens immediately | Delete the **stored access policy** they reference |
+| Grant time-limited read access to a blob without sharing account key | Generate a **User Delegation SAS** |
+| Revoke SAS tokens immediately | Delete the **stored access policy** they reference or **rotate the account key** (only for Account and Service SAS) |
 | Prevent accidental blob deletion | Enable **soft delete** on the storage account |
-| Replicate blobs to another region asynchronously | Configure **object replication** (requires versioning) |
+| Replicate blobs to another region asynchronously | Configure **object replication** (requires blob versioning and change feed) |
 | Allow VMs in a VNet to access storage without internet | Add a **service endpoint** or **private endpoint** for the storage account |
-| Copy 10 TB of data from on-prem to Azure | Use **AzCopy** or **Azure Data Box** (for very large datasets) |
+| Copy 10 TB of data from on-prem to Azure | Use **AzCopy** or **Azure Data Box** (for very large datasets, offline) |
 | Automatically move logs to Archive after 90 days | Configure a **lifecycle management policy** |
 | Enforce encryption with company-managed keys | Use **Customer-Managed Keys (CMK)** stored in Azure Key Vault |
 | Mount a file share on Windows Server | Use **Azure Files** via SMB with storage account key |
