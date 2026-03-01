@@ -556,7 +556,7 @@ az network lb address-pool show \
 
 | Scenario | Solution |
 |----------|---------|
-| Provide RDP/SSH to VMs without exposing public IPs | **Azure Bastion** (requires AzureBastionSubnet /26) |
+| Provide RDP/SSH to VMs without exposing public IPs | **Azure Bastion** (requires AzureBastionSubnet with minimum CIDR size /26) |
 | Allow traffic between two VNets without internet | **VNet Peering** (both directions required) |
 | Route all internet traffic through a firewall | **User-Defined Route** with next-hop VirtualAppliance |
 | Allow web servers to talk to DB servers, not vice versa | **NSG rule** using **ASGs** |
