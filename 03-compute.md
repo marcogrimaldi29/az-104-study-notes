@@ -175,8 +175,9 @@ az vm create \
 | **D** | General purpose; balanced CPU/RAM |
 | **E** | Memory optimised; high RAM:CPU |
 | **F** | Compute optimised; high CPU:RAM |
+| **H** | High performance compute; high CPU:RAM |
 | **L** | Storage optimised; high disk throughput |
-| **M** | Largest memory (up to 4+ TB RAM) |
+| **M** | Memory optimised; Largest memory (up to 4+ TB RAM) |
 | **N** | GPU (NVIDIA); ML, graphics |
 
 > ⚠️ **Exam Caveat:** VM size families are **regionally available** — not every size exists in every region. Check availability before deploying.
@@ -196,8 +197,8 @@ az vm create \
 | **Standard HDD (S)** | Up to 500 | Up to 60 MB/s | Dev/test, infrequent access |
 | **Standard SSD (E)** | Up to 6,000 | Up to 750 MB/s | Web servers, light DB |
 | **Premium SSD (P)** | Up to 20,000 | Up to 900 MB/s | Production, latency-sensitive |
-| **Ultra Disk** | Up to 160,000 | Up to 4,000 MB/s | Mission-critical, SAP HANA |
 | **Premium SSD v2** | Up to 80,000 | Up to 1,200 MB/s | DB workloads without over-provisioning |
+| **Ultra Disk** | Up to 160,000 | Up to 4,000 MB/s | Mission-critical, SAP HANA |
 
 > ⚠️ **Exam Caveat:** **Temporary disks** (`D:` on Windows, `/dev/sdb` on Linux) are **lost on stop/deallocation**. Do not store data there. Swap/page files are fine.
 
@@ -268,7 +269,7 @@ az vm resize \
 
 ### VM Scale Sets (VMSS)
 
-VMSS automatically **creates and scales** identical VM instances.
+VMSS automatically **creates and scales** identical (or mixed) VM instances.
 
 ```bash
 az vmss create \
@@ -281,6 +282,12 @@ az vmss create \
   --upgrade-policy-mode Automatic \
   --zones 1 2 3
 ```
+**Orchestration modes:**
+
+| Mode | Description |
+|------|-------------|
+| **Uniform Orchestration** | Optimized for large-scale workloads with identical virtual machine instances |
+| **Flexible Orchestration** | Optimized for high availability and scalability with identical or mixed virtual machine types |
 
 **Scaling modes:**
 
@@ -352,7 +359,7 @@ az container create \
 ```
 
 - ACI supports **Linux and Windows** containers
-- Billed per second (CPU + memory)
+- Billed per second (CPU + Memory)
 - Supports **container groups** (multiple containers in one host, share network)
 
 ### Azure Container Apps (ACA)
@@ -385,7 +392,7 @@ az containerapp create \
   --max-replicas 5
 ```
 
-**Scaling rules in ACA:** HTTP traffic, CPU/memory, Azure Service Bus queue length, and custom KEDA triggers.
+**Scaling rules in ACA:** HTTP traffic, CPU/Memory, Azure Service Bus queue length, and custom KEDA triggers.
 
 > ⚠️ **Exam Caveat:** ACA can scale to **zero replicas** — cost drops to $0 for idle apps. ACI does not scale automatically. AKS is the full Kubernetes experience (not covered in AZ-104 in depth).
 
@@ -399,7 +406,7 @@ The **App Service Plan** defines the region, number of workers, VM size, and pri
 
 **Pricing tiers:**
 
-| Tier | CPU/RAM | Custom Domain | SSL | Slots | Scale-Out |
+| Tier | CPU/RAM | Custom Domain | SSL | Staging / Deployment Slots | Scale-Out |
 |------|---------|--------------|-----|-------|----------|
 | **Free (F1)** | Shared | ❌ | ❌ | 0 | ❌ |
 | **Basic (B1-B3)** | Dedicated | ✅ | ✅ | 0 | Manual (up to 3) |
