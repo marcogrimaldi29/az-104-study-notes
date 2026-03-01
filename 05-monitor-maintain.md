@@ -170,7 +170,7 @@ AzureMetrics
 
 ### Setting Up Alert Rules
 
-Alerts trigger when a condition is met. Components: **alert rule → condition → action group**.
+Alerts trigger when a condition is met. Components: **Alert rule → Condition → Action group**.
 
 **Alert rule types:**
 
@@ -318,9 +318,9 @@ az backup vault backup-properties set \
 
 ### Azure Backup Vault
 
-**Backup Vault** is a newer vault type used for newer backup datasources (not Recovery Services):
+**Backup Vault** is a newer vault type used for newer backup data sources (not Recovery Services):
 
-| Datasource | Vault Type |
+| Data Source | Vault Type |
 |-----------|------------|
 | Azure VMs | Recovery Services Vault |
 | SQL in VMs | Recovery Services Vault |
@@ -431,7 +431,7 @@ az site-recovery protection-container-mapping create \
 |--------------|-------------|---------|
 | **Test failover** | Non-disruptive; creates VM in isolated network | DR drill |
 | **Planned failover** | Zero data loss; shut down source first | Planned migration |
-| **Unplanned failover** | Uses latest recovery point; source may be down | Actual disaster |
+| **Unplanned failover** | Possible data loss; uses latest recovery point; source may be down; | Actual disaster |
 
 > ⚠️ **Exam Caveat:** After failover, you must **commit** the failover to complete the process, then set up **replication back** (re-protect) to the original region if you want the ability to fail back.
 
