@@ -123,13 +123,13 @@ az-104-study-notes/
 
 These notes are hosted on **GitHub Pages** and published as a searchable website on this URL:
 
-👉 **[📘 AZ-305 Study Notes](https://marcogrimaldi29.com/az-305-study-notes/)**
+👉 **[📘 AZ-104 Study Notes](https://marcogrimaldi29.com/az-104-study-notes/)**
 
 The site includes full-text search, Mermaid diagram rendering, and mobile-friendly navigation for on-the-go review. 
 
-These notes are designed to be a structured, exam-focused summary of the most important concepts and services baseds on the official [Microsoft AZ-305Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305){:target="_blank"} and its criteria.
+These notes are designed to be a structured, exam-focused summary of the most important concepts and services baseds on the official [Microsoft AZ-104 Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104){:target="_blank"} and its criteria.
 
-Additional resources and study notes maintained by me, such as the **[📘 AZ-500 Study Notes](https://marcogrimaldi29.com/az-500-study-notes/){:target="_blank"}** and more, are also available for those pursuing the Microsoft and Azure certifications at the following Landing Page:
+Additional resources and study notes maintained by me, such as the **[📘 AZ-305 Study Notes](https://marcogrimaldi29.com/az-305-study-notes/){:target="_blank"}** and more, are also available for those pursuing the Microsoft and Azure certifications at the following Landing Page:
 
 👉 **[🧑‍🏫 Microsoft Study Notes: Central Hub](https://marcogrimaldi29.com/microsoft-study-notes/){:target="_blank"}**
 
