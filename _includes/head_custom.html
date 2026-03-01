@@ -24,6 +24,10 @@
   /*
    * AZ-104 colour palette — warm brown / earthy tones
    *
+   * Page background : #F5EFE6  (warm parchment)
+   * Sidebar bg      : #EDE4D8  (darker parchment)
+   * Header bg       : #EDE4D8  (matches sidebar)
+   * Content bg      : #F5EFE6  (parchment)
    * Primary accent  : #9C6B3F  (walnut brown)
    * Light accent    : #D4A574  (caramel / tan)
    * Caveat border   : #C8956C  (terracotta)
@@ -32,10 +36,55 @@
    * Warning bg      : rgba(201, 123, 90, 0.08)
    * Table hover     : rgba(156, 107, 63, 0.10)
    * SLA highlight   : #D4A574  (caramel)
-   * h3 heading      : #C8A882  (warm sand)
-   * Mermaid border  : rgba(212, 165, 116, 0.20)
+   * h3 heading      : #9C6B3F  (walnut brown)
+   * Mermaid border  : rgba(156, 107, 63, 0.25)
    * Domain badge bg : #7B4F2E  (dark walnut)
    */
+
+  /* ── Global background — warm parchment ─────────────── */
+  body {
+    background-color: #F5EFE6 !important;
+  }
+
+  /* Main content area */
+  .main-content-wrap,
+  .main-content {
+    background-color: #F5EFE6 !important;
+  }
+
+  /* Sidebar */
+  .side-bar {
+    background-color: #EDE4D8 !important;
+  }
+
+  /* Top header bar */
+  .site-header {
+    background-color: #EDE4D8 !important;
+    border-bottom: 1px solid rgba(156, 107, 63, 0.20) !important;
+  }
+
+  /* Search input */
+  .search-input {
+    background-color: #F5EFE6 !important;
+    border-color: rgba(156, 107, 63, 0.30) !important;
+  }
+
+  /* Navigation active / hover link tint */
+  .nav-list .nav-list-item .nav-list-link.active,
+  .nav-list .nav-list-item .nav-list-link:hover {
+    background-color: rgba(156, 107, 63, 0.12) !important;
+  }
+
+  /* Code block background — keep slightly offset from page */
+  .main-content .highlight,
+  .main-content pre {
+    background-color: #EDE4D8 !important;
+  }
+
+  /* Inline code chips */
+  .main-content code {
+    background-color: #E8DDD0 !important;
+  }
 
   /* ── Exam Caveat callout ─────────────────────────────── */
   blockquote strong:first-child,
@@ -92,16 +141,16 @@
   .main-content .mermaid {
     margin:        1.5rem auto;
     padding:       1rem;
-    background:    rgba(35, 25, 15, 0.50);  /* very dark warm brown */
-    border:        1px solid rgba(212, 165, 116, 0.20);
+    background:    #EDE4D8;                /* parchment — same as sidebar */
+    border:        1px solid rgba(156, 107, 63, 0.25);
     border-radius: 8px;
     overflow-x:    auto;
     text-align:    center;
   }
 
-  /* Ensure diagram text is readable on the dark background */
+  /* Ensure diagram text is readable on the warm light background */
   .main-content .mermaid svg text {
-    fill: #f0e6d8 !important;              /* warm off-white */
+    fill: #3B2409 !important;              /* deep walnut — high contrast on parchment */
   }
 
   /* ── Code blocks ─────────────────────────────────────── */
@@ -137,7 +186,7 @@
 
   .main-content h3 {
     margin-top: 1.5rem;
-    color:      #C8A882;                   /* warm sand */
+    color:      #9C6B3F;                   /* walnut brown — readable on parchment */
   }
 
   /* ── Scenario quick-reference tables ────────────────── */
