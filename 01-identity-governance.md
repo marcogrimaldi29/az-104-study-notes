@@ -2,6 +2,9 @@
 layout: default
 title: 01 — Identity & Governance
 nav_order: 3
+description: "Design identity and governance and solutions."
+permalink: /01-identity-governance-monitoring/
+mermaid: true
 ---
 
 # 🔐 01 — Manage Azure Identities and Governance

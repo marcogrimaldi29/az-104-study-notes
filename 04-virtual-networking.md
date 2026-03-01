@@ -2,6 +2,9 @@
 layout: default
 title: 04 — Virtual Networking
 nav_order: 6
+description: "Implement and manage virtual networking: VNets, NSGs, peering, Bastion, DNS, service endpoints, private endpoints, and load balancing."
+permalink: /04-virtual-networking/
+mermaid: true
 ---
 
 # 🌐 04 — Implement and Manage Virtual Networking

@@ -2,6 +2,9 @@
 layout: default
 title: 06 — Quick Reference Cheatsheet
 nav_order: 8
+description: "Quick reference cheatsheet for AZ-104: key numbers, SLA tables, decision trees, CLI/PowerShell commands, SKU comparisons, and exam traps by domain."
+permalink: /06-quick-reference-cheatsheet/
+mermaid: true
 ---
 
 # ⚡ 06 — Quick Reference Cheatsheet

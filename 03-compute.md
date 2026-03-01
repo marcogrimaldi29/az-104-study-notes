@@ -2,6 +2,9 @@
 layout: default
 title: 03 — Compute
 nav_order: 5
+description: "Deploy and manage Azure compute resources: ARM templates, VMs, availability options, containers, and App Service."
+permalink: /03-compute/
+mermaid: true
 ---
 
 # 🖥️ 03 — Deploy and Manage Azure Compute Resources

@@ -2,6 +2,10 @@
 layout: default
 title: 00 — Azure Prerequisites
 nav_order: 2
+description: "Core Azure architecture fundamentals: regions, availability zones, etc."
+permalink: /00-azure-prerequisites/
+mermaid: true
+---
 ---
 
 # 📘 00 — Azure Prerequisites & Fundamentals
