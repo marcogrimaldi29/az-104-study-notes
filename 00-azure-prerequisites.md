@@ -32,7 +32,7 @@ Core concepts you must know before tackling any exam domain.
 
 A **geography** is a discrete market (e.g. Europe, Asia Pacific) that preserves data-residency boundaries. Each geography contains one or more **regions**.
 
-A **region** is a set of datacenters connected by a low-latency network. When you deploy a resource, you choose a region — resources are hosted in that region unless explicitly replicated.
+A **region** is a set of datacenters connected by a low-latency network, usually having less than 2ms latency. When you deploy a resource, you choose a region — resources are hosted in that region unless explicitly replicated.
 
 | Concept | Description | Example |
 |---------|-------------|---------|
@@ -44,7 +44,7 @@ A **region** is a set of datacenters connected by a low-latency network. When yo
 
 ### Availability Zones (AZs)
 
-Availability Zones are **physically separate datacenters** within a single region. Each zone has independent power, cooling, and networking.
+Availability Zones are **physically separate datacenters** within a single region. Each zone has independent power, cooling, and networking. They are designed to protect applications and data from datacenter failures. Not all regions have AZs, but when they do, you can choose to deploy resources in specific zones or use zone-redundant services.
 
 ```
 Region: West Europe
@@ -57,7 +57,7 @@ Region: West Europe
 |------------------|-----------|
 | **Zonal** | Pinned to a specific zone (e.g. a VM in Zone 1) |
 | **Zone-redundant** | Automatically spread across zones (e.g. zone-redundant storage) |
-| **Always-available** | Services that span all AZs by default (e.g. Azure DNS) |
+| **Regional** | Services that span all AZs by default (e.g. Azure DNS) |
 
 **SLA improvement:**
 - Single VM + Premium SSD = **99.9%**
@@ -67,7 +67,7 @@ Region: West Europe
 ### Datacenters and Edge
 
 - **Datacenters** host the physical hardware — not directly accessible by customers
-- **Azure Edge Zones** extend compute to 5G network edges for low-latency scenarios
+- **Azure Edge Zones** extend compute to 5G network edges for low-latency scenarios - see also Points of Presence (PoPs) and Microsoft Enterprise Edge (MSEE)
 - **Azure Stack** brings Azure services on-premises
 
 ---
@@ -79,9 +79,9 @@ ARM is the **management layer** for all Azure resources. Every action — portal
 ```
 User / Tool
     ↓
-Azure Resource Manager (ARM)
+Authentication (MicrosoftEntra ID)
     ↓
-Authentication (Entra ID)
+Azure Resource Manager (ARM)
     ↓
 Resource Providers (Microsoft.Compute, Microsoft.Storage, ...)
     ↓
@@ -105,7 +105,7 @@ Azure Tenant (Entra ID)
 | **Resource Group** | Logical container; all resources have a lifecycle |
 | **Resource** | Individual service instance (VM, VNet, etc.) |
 
-> ⚠️ **Exam Caveat:** A resource group has a **region**, but resources inside it can be in **different regions**. The resource group region only stores metadata.
+> ⚠️ **Exam Caveat:** A resource group has a **region**, but resources inside it can be in **different regions**. The resource group region only stores metadata, it's a logical grouping mechanism.
 
 ### Resource Providers
 
@@ -166,7 +166,7 @@ Entra ID is Azure's cloud-based **Identity and Access Management (IAM)** service
 | **Free** | 12 months free services + $200 credit |
 | **Pay-As-You-Go** | Standard billing by consumption |
 | **Enterprise Agreement (EA)** | Org-level discount commitment |
-| **CSP** | Purchased through a Microsoft partner |
+| **CSP** | Purchased through a Microsoft Partner |
 
 ### Cost Management Tools
 
