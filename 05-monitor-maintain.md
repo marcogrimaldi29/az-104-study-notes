@@ -2,6 +2,9 @@
 layout: default
 title: 05 — Monitor & Maintain
 nav_order: 7
+description: "Monitor and maintain Azure resources: Azure Monitor, Log Analytics, alerts, action groups, VM Insights, Network Watcher, Azure Backup, Recovery Services vaults, and Azure Site Recovery."
+permalink: /05-monitor-maintain/
+mermaid: true
 ---
 
 # 📊 05 — Monitor and Maintain Azure Resources

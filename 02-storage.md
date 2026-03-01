@@ -2,6 +2,9 @@
 layout: default
 title: 02 — Storage
 nav_order: 4
+description: "Implement and manage Azure Storage accounts, redundancy, SAS tokens, access policies, encryption, Azure Files, Blob storage, lifecycle management."
+permalink: /02-storage/
+mermaid: true
 ---
 
 # 🗄️ 02 — Implement and Manage Storage
