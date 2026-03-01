@@ -1,0 +1,44 @@
+// _sass/custom/custom.scss
+// Just the Docs loads this file automatically for overrides.
+//
+// IMPORTANT: Do NOT reference internal Just the Docs SCSS variables here
+// (e.g. $nav-list-item-padding, $link-color, $sidebar-color).
+// Those variables are scoped to the theme's own compilation context and
+// are NOT available in this file, causing "Undefined variable" build errors.
+// All visual polish that needs those values lives in head_custom.html instead.
+
+// ── Smooth scroll ─────────────────────────────────────────
+html {
+  scroll-behavior: smooth;
+}
+
+// ── Horizontal rule ───────────────────────────────────────
+hr {
+  margin: 1.75rem 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+// ── Bold text ─────────────────────────────────────────────
+.main-content strong {
+  font-weight: 700;
+}
+
+// ── Blockquotes (exam caveats) ────────────────────────────
+.main-content blockquote {
+  font-style: normal;
+  margin: 1rem 0;
+}
+
+// ── Mermaid container ─────────────────────────────────────
+pre.mermaid,
+.mermaid {
+  background: transparent !important;
+}
+
+// ── Inline code in tables ─────────────────────────────────
+table code {
+  font-size: 0.8em;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
