@@ -177,7 +177,7 @@ Additional study notes maintained by me are also available for those pursuing Mi
 
 👉 **[🛬 Landing Page: Study Notes](https://marcogrimaldi29.com/study-notes/)**
 
-### 🔗 **Companion repos
+### 🔗 Companion repos
 
 The AZ-104 is a *prerequisite* for obtaining the AZ-305. Companion deep-dive and study notes on key services and topics covering both AZ-104 and AZ-305 are also available at the following URLs:
 - **[📘 AZ-305 Study Notes](https://marcogrimaldi29.com/az-305-study-notes/)**
