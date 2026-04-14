@@ -40,6 +40,17 @@ mermaid: true
 ## 📊 Domain Weights
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{
+    "textColor":"#f0e6d8",
+    "primaryColor":"#f0e6d8",
+    "lineColor":"#f0e6d8",
+    "background":"#382817",
+    "pie1":"#d69d20",
+    "pie2":"#5f7ba7",
+    "pie3":"#4ea08a",
+    "pie4":"#9a7a4a",
+    "pie5":"#b0655a"
+}}}%%
 pie title AZ-104 — Official Exam Domain Weights
     "Manage Azure Identities & Governance (20–25%)" : 25
     "Implement and Manage Storage (15–20%)" : 20
