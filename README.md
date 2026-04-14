@@ -9,6 +9,7 @@
 > 🎯 **Goal:** Earn the Microsoft Certified: Azure Administrator Associate badge
 > 📅 **Notes Version:** 2026
 > 📋 **Based on:** [Official Microsoft AZ-104 Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
+> - 🔗 **Companion repos:** [📘 AZ-305 Study Notes](https://marcogrimaldi29.com/az-305-study-notes/) · [🥽 AZ-305: Azure Compute Services — Deep Dive](https://marcogrimaldi29.com/az-305-compute/) · [🥽 AZ-305: Azure Messaging Services — Deep Dive](https://marcogrimaldi29.com/az-305-messaging/) · [🥽 AZ-305: Data & Analytics Services — Deep Dive](https://marcogrimaldi29.com/az-305-data-analytics/) · [🥽 AZ-305: Migration, HA & BCDR — Deep Dive](https://marcogrimaldi29.com/az-305-bcdr/)
 
 ---
 
@@ -129,15 +130,13 @@ The site includes full-text search, Mermaid diagram rendering, and mobile-friend
 
 These notes are designed to be a structured, exam-focused summary of the most important concepts and services baseds on the official [Microsoft AZ-104 Study Guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104){:target="_blank"} and its criteria.
 
-Additional resources and study notes maintained by me, such as the **[📘 AZ-305 Study Notes](https://marcogrimaldi29.com/az-305-study-notes/){:target="_blank"}** and more, are also available for those pursuing the Microsoft and Azure certifications at the following Landing Page:
+Additional study notes maintained by me are also available for those pursuing Microsoft and Azure certifications at the following Landing Page:
 
-👉 **[🧑‍🏫 Microsoft Study Notes: Central Hub](https://marcogrimaldi29.com/microsoft-study-notes/){:target="_blank"}**
-
-> *Not affiliated with or endorsed by Microsoft. Always verify against the latest Microsoft documentation.*
+👉 **[🛬 Landing Page: Study Notes](https://marcogrimaldi29.com/study-notes/)**
 
 ---
 
-## ✍️ Author
+## ✍️ About the Author
 
 Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Consultant, Language Trainer & Lifelong Learner.
 
@@ -155,10 +154,10 @@ This site uses [Umami](https://umami.is/) for privacy-friendly analytics.
 
 ## ©️ Credits & Acknowledgements
 
-The [Just the Docs](https://github.com/just-the-docs/just-the-docs) theme is used for a clean, documentation-style layout. Licensed under [MIT](https://opensource.org/license/MIT).
+The **[Just the Docs](https://github.com/just-the-docs/just-the-docs)** theme is used for a clean, documentation-style layout. Licensed under [MIT](https://opensource.org/license/MIT).
 
-Created with the help of AI. Model used: [Claude Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6). The content has been reviewed and edited by the author for accuracy and clarity, but may contain errors. Always verify against the latest [Microsoft documentation](https://learn.microsoft.com/en-us/azure/).
-
----
+Created with the help of AI. Model used: **[Claude Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6)**. The content has been reviewed and edited by the author for accuracy and clarity, but may contain errors. Always verify against the latest [Microsoft documentation](https://learn.microsoft.com/en-us/azure/).
 
 > *Not affiliated with or endorsed by Microsoft.*
+
+---
