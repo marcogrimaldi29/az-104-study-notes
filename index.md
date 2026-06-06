@@ -196,13 +196,19 @@ These notes are maintained by **[Marco Grimaldi](https://www.linkedin.com/in/mar
 
 > The website is continuously updated and based on my personal study notes and experiences. If you have any feedback, suggestions, or corrections, feel free to [reach out](https://marcogrimaldi29.com/contact/){:target="_blank"}!
 
-> ⭐ If these notes have helped your study journey, consider **[starring the repo on GitHub](https://github.com/marcogrimaldi29/az-104-study-notes){:target="_blank"}** — it helps others find these resources and keeps the motivation going!
-
 ---
 
 ## 📈 Analytics
 
 This site uses **[Umami](https://umami.is/)** for privacy-friendly analytics.
+
+---
+
+## ⭐ Found These Notes Helpful?
+
+If these notes have helped you prepare for the AZ-104 exam, consider giving the repo a **star on GitHub** — it helps others find these resources and makes the effort of keeping them up-to-date worthwhile. Thank you! 🙌
+
+[⭐ Star this repo](https://github.com/marcogrimaldi29/az-104-study-notes){: .btn .btn-outline .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
