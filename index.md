@@ -18,8 +18,8 @@ mermaid: true
 
 ---
 
-> 🏠 These notes are maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/){:target="_blank"}** and based on the **[official Microsoft AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)** (updated April 2025).
-> Find more certification guides, study tips, and tech content at **[🌐 marcogrimaldi29.com](https://marcogrimaldi29.com){:target="_blank"}**.
+> These notes are maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/){:target="_blank"}** and based on the **[official Microsoft AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)** (updated April 2025).
+> Find more certification guides, study tips, and tech content at **[🏠 marcogrimaldi29.com](https://marcogrimaldi29.com){:target="_blank"}**.
 > *Not affiliated with or endorsed by Microsoft. Always verify against the latest Microsoft documentation.*
 
 ---
@@ -192,7 +192,7 @@ The AZ-104 is a *prerequisite* for obtaining the AZ-305. Companion deep-dive and
 
 These notes are maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/){:target="_blank"}** — Cloud Consultant, Language Trainer & Lifelong Learner.
 
-📍 **Find more content at [🌐 marcogrimaldi29.com](https://marcogrimaldi29.com){:target="_blank"}**
+📍 **Find more content at [🏠 marcogrimaldi29.com](https://marcogrimaldi29.com){:target="_blank"}**
 
 > The website is continuously updated and based on my personal study notes and experiences. If you have any feedback, suggestions, or corrections, feel free to [reach out](https://marcogrimaldi29.com/contact/){:target="_blank"}!
 
